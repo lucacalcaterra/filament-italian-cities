@@ -10,11 +10,11 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
+use Lucacalcaterra\FilamentItalianCities\Commands\FilamentItalianCitiesCommand;
+use Lucacalcaterra\FilamentItalianCities\Testing\TestsFilamentItalianCities;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Lucacalcaterra\FilamentItalianCities\Commands\FilamentItalianCitiesCommand;
-use Lucacalcaterra\FilamentItalianCities\Testing\TestsFilamentItalianCities;
 
 class FilamentItalianCitiesServiceProvider extends PackageServiceProvider
 {

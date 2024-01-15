@@ -1,29 +1,27 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "lucacalcaterra/filament-italian-cities",
+    "description": "This is my package filament-italian-cities",
     "keywords": [
-        ":vendor_name",
+        "lucacalcaterra",
         "laravel",
-        ":package_slug"
+        "filament-italian-cities"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/lucacalcaterra/filament-italian-cities",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/lucacalcaterra/filament-italian-cities/issues",
+        "source": "https://github.com/lucacalcaterra/filament-italian-cities"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Luca Calcaterra",
+            "email": "calcaterra.luca@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
         "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
         "spatie/laravel-package-tools": "^1.15.0",
         "illuminate/contracts": "^10.0"
     },
@@ -42,13 +40,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Lucacalcaterra\\FilamentItalianCities\\": "src/",
+            "Lucacalcaterra\\FilamentItalianCities\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Lucacalcaterra\\FilamentItalianCities\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -68,10 +66,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Lucacalcaterra\\FilamentItalianCities\\FilamentItalianCitiesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentItalianCities": "Lucacalcaterra\\FilamentItalianCities\\Facades\\FilamentItalianCities"
             }
         }
     },

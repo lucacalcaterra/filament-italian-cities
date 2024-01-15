@@ -103,8 +103,8 @@ class FilamentItalianCitiesServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('filament-italian-cities', __DIR__ . '/../resources/dist/components/filament-italian-cities.js'),
-            Css::make('filament-italian-cities-styles', __DIR__ . '/../resources/dist/filament-italian-cities.css'),
-            Js::make('filament-italian-cities-scripts', __DIR__ . '/../resources/dist/filament-italian-cities.js'),
+            //  Css::make('filament-italian-cities-styles', __DIR__ . '/../resources/dist/filament-italian-cities.css'),
+            // Js::make('filament-italian-cities-scripts', __DIR__ . '/../resources/dist/filament-italian-cities.js'),
         ];
     }
 

@@ -2,8 +2,10 @@
 
 namespace Lucacalcaterra\FilamentItalianCities;
 
-use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\Contracts\Plugin;
+use Lucacalcaterra\FilamentItalianCities\Filament\Resources;
+use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource;
 
 class FilamentItalianCitiesPlugin implements Plugin
 {
@@ -14,9 +16,10 @@ class FilamentItalianCitiesPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        // $panel
-        // ->resources([
-        // ])
+        $panel
+            ->resources([
+                CityResource::class
+            ]);
     }
 
     public function boot(Panel $panel): void

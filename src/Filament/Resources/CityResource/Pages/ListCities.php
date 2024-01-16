@@ -6,7 +6,6 @@ use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
 use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource;
 
-
 class ListCities extends ListRecords
 {
     protected static string $resource = CityResource::class;
@@ -22,5 +21,4 @@ class ListCities extends ListRecords
     {
         return [10, 25, 50, 100, 200];
     }
-
 }

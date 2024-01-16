@@ -2,17 +2,16 @@
 
 namespace Lucacalcaterra\FilamentItalianCities\Filament\Resources;
 
-
 use Filament\Forms\Form;
-use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Lucacalcaterra\FilamentItalianCities\Models\City;
-use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource\Pages\EditCity;
+use Filament\Tables\Table;
 use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource\Pages\CreateCity;
+use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource\Pages\EditCity;
 use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource\Pages\ListCities;
+use Lucacalcaterra\FilamentItalianCities\Models\City;
 
 class CityResource extends Resource
 {

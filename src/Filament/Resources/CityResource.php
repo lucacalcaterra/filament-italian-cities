@@ -3,16 +3,16 @@
 namespace Lucacalcaterra\FilamentItalianCities\Filament\Resources;
 
 use Filament\Forms\Form;
-use Filament\Tables\Table;
 use Filament\Resources\Resource;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Actions\DeleteBulkAction;
-use Lucacalcaterra\FilamentItalianCities\Models\City;
-use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource\Pages\EditCity;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource\Pages\CreateCity;
+use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource\Pages\EditCity;
 use Lucacalcaterra\FilamentItalianCities\Filament\Resources\CityResource\Pages\ListCities;
+use Lucacalcaterra\FilamentItalianCities\Models\City;
 
 class CityResource extends Resource
 {
@@ -42,7 +42,7 @@ class CityResource extends Resource
                 TextColumn::make('cf')->sortable()->label('CF'),
                 TextColumn::make('pec')->sortable()->label('PEC'),
                 TextColumn::make('sito_web')->sortable()->label('Web'),
-                ImageColumn::make('stemma')->getStateUsing(fn($record): string => $record->link_stemma),
+                ImageColumn::make('stemma')->getStateUsing(fn ($record): string => $record->link_stemma),
                 TextColumn::make('latitud')->sortable()->label('Latitud'),
                 TextColumn::make('longitud')->sortable()->label('Longitud'),
             ])
